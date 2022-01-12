@@ -11,23 +11,9 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-blue-600 hover:text-black text-6xl font-bold cursive tracking-widest"
+            className="inflex-flex items-center py-8 px-3 mr-4 text-blue-600 hover:text-black text-4xl font-bold cursive tracking-widest"
           >
-            Derek
-          </NavLink>
-          <NavLink
-            to="/post"
-            activeClassName="text-blue-400 bg-blue-100"
-            className="inline-flex items-center py-3 px-3 mr-6 rounded text-blue-600 hover:text-black text transition duration-500 ease-in-out  hover: transform hover:-translate-y-1 hover:scale-110"
-          >
-            Blog Posts
-          </NavLink>
-          <NavLink
-            to="/project"
-            activeClassName="text-blue-400 bg-blue-100"
-            className="inline-flex items-center py-3 px-3 mr-6 rounded text-blue-600 hover:text-black text transition duration-500 ease-in-out  hover: transform hover:-translate-y-1 hover:scale-110"
-          >
-            My Projects
+            Rubie Web Development
           </NavLink>
           <NavLink
             to="/about"
@@ -35,6 +21,20 @@ export default function NavBar() {
             className="inline-flex items-center py-3 px-3 mr-6 rounded text-blue-600 hover:text-black text transition duration-500 ease-in-out  hover: transform hover:-translate-y-1 hover:scale-110"
           >
             About Me
+          </NavLink>
+          <NavLink
+            to="/post"
+            activeClassName="text-blue-400 bg-blue-100"
+            className="inline-flex items-center py-3 px-3 mr-6 rounded text-blue-600 hover:text-black text transition duration-500 ease-in-out  hover: transform hover:-translate-y-1 hover:scale-110"
+          >
+            My Skills
+          </NavLink>
+          <NavLink
+            to="/project"
+            activeClassName="text-blue-400 bg-blue-100"
+            className="inline-flex items-center py-3 px-3 mr-6 rounded text-blue-600 hover:text-black text transition duration-500 ease-in-out  hover: transform hover:-translate-y-1 hover:scale-110"
+          >
+            Completed Projects
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6 flex space-x-3">

@@ -24,13 +24,13 @@ export default function About() {
       .catch(console.error);
   }, []);
 
-  if (!author) return <div>Loading again....</div>;
+  if (!author) return <div></div>;
 
   return (
     <main className="bg-blue-100 min-h-screen p-12">
       <div className="container mx-auto relative">
-      <h1 className="text-5xl font-bold italic flex justify-center cusrsive pb-24">Meet Mr. Rubie</h1>
-        <section className="bg-green-400 rounded-lg shadow-4xl lg:flex p-40">
+      <h1 className="text-4xl font-bold italic flex justify-center cusrsive pb-12">About Me</h1>
+        <section className="bg-blue-300 rounded-lg shadow-4xl lg:flex p-40">
           <div className="text-lg flex flex-col justify-center grid grid-cols-2">
             <h1 className="cursive text-6xl text-green-300 mb-4">
               {" "}
