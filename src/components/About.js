@@ -67,7 +67,7 @@ export default function About() {
               <li id="li-5" class="text-white tracking-wide">I moved to New Jersey in 2020.</li>
               <li id="li-6" class="text-white tracking-wide">I enjoy hiking and weekend trips with my wife.</li>
               <li id="li-7" class="text-white tracking-wide">I train Brazilian Jiu-Jitsu.</li>
-              <li id="li-8" class="text-white tracking-wide">I am a huge St. Louis Blues fan.</li>
+              <li id="li-8" class="text-white tracking-wide">I am a St. Louis Blues fan.</li>
             </ul>
           </div>
         </section>
