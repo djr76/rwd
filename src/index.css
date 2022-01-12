@@ -1,13 +1,268 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+
+@import url("https://unpkg.com/tailwindcss@^1/dist/tailwind.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+@import url("https://unpkg.com/tailwindcss@^2/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+.cursive{
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pose img{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
+
+.home-name{
+  font-size: 150px;
+}
+
+.splash{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+ 
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+}
+
+
+
+#op{
+  animation:0s ease 0s normal forwards 1 fadein;
+  -webkit-animation:0s ease 0s normal forwards 1 fadein;
+  animation-direction: normal;
+  animation-duration: 2s ;
+  opacity:1;
+  position: relative;
+  }
+  
+  @keyframes fadein{
+      0%{opacity:0; left: -300px;}
+      100%{opacity:1; left: 0px}
+  }
+  
+  @-webkit-keyframes fadein{
+      0%{opacity:0; left:-300px}
+      100%{opacity:1; left: 0px}
+  }
+
+  @keyframes slidein {
+    to {
+      transform: translateX(0px);
+    }
+
+    from {
+      transform: translateX(-600px);
+    }
+  }
+
+
+  #li-1 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: .5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  
+  #li-2 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: 1.5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  
+  
+  #li-3 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: 2.5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  
+  #li-4 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: 3.5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  
+  #li-5 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: 4.5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  
+  #li-6 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: 5.5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  
+  #li-7 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: 6.5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+
+  #li-8 {
+    animation: crescendo 1.5s alternate ease-in;
+    -webkit-animation: crescendo 1.5s alternate ease-in;
+    animation-direction: normal;
+    animation-duration: 1.5;
+    animation-delay: 7.5s;
+    opacity: 1;
+    position: relative;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  
+  }
+  
+  @-webkit-keyframes crescendo {
+    0%   {transform: scale(.8);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  
+
+
+
