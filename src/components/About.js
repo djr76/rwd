@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+import image from "../aboutme.png";
+
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -27,14 +29,17 @@ export default function About() {
   if (!author) return <div></div>;
 
   return (
-    <main className="bg-blue-100 min-h-screen p-12">
+    <main>{
+      <img src={image} alt="Gateway Arch" className="absolute object-cover w-full h-full" />
+    }
+    
       <div className="container mx-auto relative">
-      <h1 className="text-4xl font-bold italic flex justify-center cusrsive pb-12">About Me</h1>
-        <section className="bg-blue-300 rounded-lg shadow-4xl lg:flex p-40">
+      <h1 className="text-4xl font-bold text-blue-800 italic flex justify-center cusrsive pt-12 pb-12">About Me</h1>
+        <section className="rounded-lg shadow-4xl lg:flex p-20">
           <div className="text-lg flex flex-col justify-center grid grid-cols-2">
-            <h1 className="cursive text-6xl text-green-300 mb-4">
+            <h1 className="cursive text-6xl text-blue-800 mb-4">
               {" "}
-              <span className="text-white">{author.name}</span>
+              <span className="text-blue-800">{author.name}</span>
               <span>
                 <img
                   src={urlFor(author.authorImage).url()}
@@ -53,21 +58,21 @@ export default function About() {
           </div>
           <div className="text-lg flex flex-col justify-center">
             <ul class="list-none text-xl space-y-6 ">
-              <li id="li-1" class="text-white tracking-wide">
+              <li id="li-1" class="text-blue-800 tracking-wide">
                 I enjoy creativity and problem solving in Web Development.
               </li>
-              <li id="li-2" class="text-white tracking-wide">
+              <li id="li-2" class="text-blue-800 tracking-wide">
                 I believe the foundation of a thriving business is client
                 satisfaction.
               </li>
-              <li id="li-3" class="text-white tracking-wide">
+              <li id="li-3" class="text-blue-800 tracking-wide">
                 I am passionate about the improvement of my product.
               </li>
-              <li id="li-4" class="text-white tracking-wide">I am a naive of Saint Louis, Missouri.</li>
-              <li id="li-5" class="text-white tracking-wide">I moved to New Jersey in 2020.</li>
-              <li id="li-6" class="text-white tracking-wide">I enjoy hiking and weekend trips with my wife.</li>
-              <li id="li-7" class="text-white tracking-wide">I train Brazilian Jiu-Jitsu.</li>
-              <li id="li-8" class="text-white tracking-wide">I am a St. Louis Blues fan.</li>
+              <li id="li-4" class="text-blue-800 tracking-wide">I am a naive of Saint Louis, Missouri.</li>
+              <li id="li-5" class="text-blue-800 tracking-wide">I moved to New Jersey in 2020.</li>
+              <li id="li-6" class="text-blue-800 tracking-wide">I enjoy hiking and weekend trips with my wife.</li>
+              <li id="li-7" class="text-blue-800 tracking-wide">I train Brazilian Jiu-Jitsu.</li>
+              <li id="li-8" class="text-blue-800 tracking-wide">I am a St. Louis Blues fan.</li>
             </ul>
           </div>
         </section>
